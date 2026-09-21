@@ -1,0 +1,28 @@
+:root {
+    /*  #fafcfd */
+    --main-bg-color: #e4f2fa;
+    --primary-bg-color: #46a3d2;
+    --secondary-bg-color: #91cdeb;
+    --accent-color: #5dbbeb;
+    --text-color: #0b161b;
+    --body-bg-color: #edf5fa;
+    --highlight-bg-color: #f2f7fa;
+  
+    --heading-font-size: 2rem;  
+    --subheading-font-size: 1.5rem;
+    --paragraph-font-size: 1rem;
+  
+    --border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #__next {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+    background-color: var(--body-bg-color);
+}

@@ -1,0 +1,11 @@
+.info-card {
+    display: grid;
+    width: auto;
+    margin: 0 20px 20px 20px;
+}
+
+.content-part {
+    display: flex;
+    flex-flow: column;
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Cipher</title>
+        <link href="css\navigation.css" rel="stylesheet" type="text/css"/>
+        <link href="css\general.css" rel="stylesheet" type="text/css"/>
+        <link href="css\main.css" rel="stylesheet" type="text/css"/>
+        <link href="css\help.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <nav>
+            <div></div>
+            <div></div>
+            <div id="navigation-container">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Trainer</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+                <ul>
+                    <li class="rescale underline"><a href="home.html">Home</a></li>
+                    <li class="rescale underline"><a href="index.html">Trainer</a></li>
+                    <li class="rescale underline"><a href="#">Help</a></li>
+                    <li class="rescale underline"><a href="#">Support</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+              </div>
+        </nav>
+
+        <main>
+            <div class="info-card">
+                <div class="content-part">
+                    <div class="info-card-title"><h1>Nihilist Cipher</h1></div>
+                    <div class="info-card-content">In the nihilist cipher, you are given an array of numbers, a keyword, and a polybius keyword. To solve it, you must take the polybius keyword and place the letters into a 5x5 grid. Remove all duplicates and "i" is the same letter as "j". Then, complete the square with the rest of the non-repeating alphabet. Line up the letters of the keyword to the ciphertext, repeating as much as necessary. The value of each letter is the square's mapping, the tens digit is the row and the ones digit is the column. Subtract, and the new value is the mapping for the plaintext letter. </div>
+                </div>
+                <!-- <div class="info-card-media"> bye</div> -->
+            </div>
+            <div class="info-card">
+                <div class="content-part">
+                    <div class="info-card-title"><h1>Hill Cipher</h1></div>
+                    <div class="info-card-content">In the hill cipher, each letter maps to its position on the alphabet, from 0-25. You must fill the keyword into a 2x2 matrix, from left to right. The next step is to find the inverse matrix. Find the determinant taken modulo 26. Then, find the adjacent matrix modulo 26. To decrypt, line up two letters and multiply by the decryption matrix, taking modulo 26 and mapping.</div>
+                </div>
+                <!-- <div class="info-card-media"> bye</div> -->
+            </div>
+            <div class="info-card">
+                <div class="content-part">
+                    <div class="info-card-title"><h1>Aristocrat Cipher</h1></div>
+                    <div class="info-card-content">Aristocrats are mostly bashing, however analyzing the structure and letter frequency greatly help. For example, a "t" or an "s" comes after an apostrope and "e" is the most common letter. Common structures to pay attention to are "that" or "else". Taken together, if a three letter word has a very frequent first and third letter, the word is likely "the". Remember, no letter can decrypt to itself.</div>
+                </div>
+                <!-- <div class="info-card-media"> bye</div> -->
+            </div>
+            <div class="info-card">
+                <div class="content-part">
+                    <div class="info-card-title"><h1>Patristocrat Cipher</h1></div>
+                    <div class="info-card-content">Patristocrats are almost exactle like aristocrats, except there is no puncutation and letters are group into 5s. So, analyzing word structure becomes impossible. In this case, you must use frequency analysis or pray that common structures line up. For example, "that" is still common, especially if "t" is common.</div>
+                </div>
+                <!-- <div class="info-card-media"> bye</div> -->
+            </div>
+        </main>
+
+        <script src="js\frontend\frontend.js"></script>
+
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel" src="js\supabase\App.jsx" type="module"></script>
+
+        <footer></footer>
+    </body>
+</html>

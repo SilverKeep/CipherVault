@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Cipher</title>
+  <link href="css/navigation.css" rel="stylesheet" type="text/css"/>
+  <link href="css/general.css" rel="stylesheet" type="text/css"/>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="css/home.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <nav class="home">
+    <div class="nav-title-section">
+      <div class="nav-image"><img src="images\GAME.png"></div>
+      <div class="nav-title">Cryptix</div>
+    </div>
+    <div id="navigation-container">
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#"><strong>Home</strong></a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="index.html">Trainer</a></li>
+      </ul>
+      <ul>
+        <li class="rescale underline"><a href="#">Home</a></li>
+        <li class="rescale underline"><a href="help.html">Help</a></li>
+        <li class="rescale underline"><a href="#">Support</a></li>
+        <li class="rescale underline"><a href="index.html">Trainer</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <canvas id="home-canvas"></canvas>
+  <script src="js\frontend\canvas.js"></script>
+
+  <div id="header-container">
+
+      <div id="header-content">
+      <div class="home-header-title">Win Big on Science Olympiad Codebusters</div>
+      <div class="home-header-description">
+        with an extensive array of easy-to-use ciphers to practice from with a database of 100+ quotes.
+      </div>
+      <div class="input-container">
+        <button id="home-header-link">Begin Now</button>
+        <script>
+          let transport = document.getElementById('home-header-link');
+          transport.addEventListener('click', () => {
+            document.location.href = "index.html";
+          });
+        </script>
+      </div>
+    </div>
+    <div id="header-image">
+      <img src="images/logo.jpg" alt="Decorative"/>
+    </div>
+  </div>
+
+  <!-- <div class="home-separator-top"></div> -->
+  <div id="main-content-container" class="section-container">
+    <div id="main-content-title" class="section-title">Lacking Practice?</div>
+    <div class="section-content">
+      <p class="main-pitch-content">
+        On-paper options for practicing ciphers either takes time to copy or valuable ink when printing.
+        But there isn't another option, or is there? We have a more elegant and efficient method.
+      </p>
+      <p class="main-pitch-content">
+        One source includes both Aristocrats and Patristocrat. However, ours also has Hill
+        and Nihilist. Beyond that, it provides a simple, interactive interface allowing
+        you to track your progress.
+      </p>
+    </div>
+  </div>
+  <div class="home-separator-bottom"></div>
+
+  <!-- <script src="js\frontend.js"></script> -->
+
+  <div id="benefits-content-container" class="section-container">
+    <div id="benefits-content-title" class="section-title">Benefits</div>
+    <div class="benefits-view-container">
+      <div class="benefits-view-block card">
+        <div class="benefits-view-content-title">Save Time</div>
+        <div class="benefits-view-content">
+          Copying on paper is a long, intensive process. Even printing a cipher list takes up valuable ink, and an all-too stressful wait. Digital ciphers help avoid all these problems at once!
+        </div>
+      </div>
+      <div class="benefits-view-block card">
+        <div class="benefits-view-content-title">Practice Efficiently</div>
+        <div class="benefits-view-content">
+          With the inherent speed, you can just as quickly cycle through so much more in the same time. Our interface was built to replicate the real format on the test, making it equally effective.
+        </div>
+      </div>
+      <div class="benefits-view-block card">
+        <div class="benefits-view-content-title">Practice More</div>
+        <div class="benefits-view-content">
+          Though other online resources exist, only ours contains the rest of the ciphers in an easily-toggleable system. Additionally, we are open to any requests for new ciphers, maybe just for fun! 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="faq-container">
+    <div id="faq-title" class="section-title">Potentially Asked Questions</div>
+    <div class="faq-item">
+      <div class="faq-question">What is this resource?</div>
+      <div class="faq-answer">
+        <p class="faq-answer-text">This is an interactive platform designed to help users practice various types of ciphers for Science Olympiad Codebusters and beyond.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How does this help me practice?</div>
+      <div class="faq-answer">
+        <p class="faq-answer-text">We offer an extensive library of cipher types with an easy-to-use interface, allowing you to track your progress and improve efficiently.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Can I request new features?</div>
+      <div class="faq-answer">
+        <p class="faq-answer-text">Yes! We welcome feedback and feature requests. Your suggestions help us to elevate this platform to its maximum. To submit, please reference the form on the footer.</p>
+      </div>
+    </div>
+    <script src="js\frontend\faq.js"></script>
+  </div>
+
+  <footer>
+    <div class="footer-group">
+      <div class="footer-desctiption-section">
+        <div class="footer-group-logo"><img src="images\GAME.png"></div>
+        <div class="description">The purpose of this resource is to provide an easy way to practice ciphers directly, tracking progress as you go! It is completely free.</div>
+      </div>
+
+      <div>
+        <div class="footer-section-title">Pages</div>
+        <div class="footer-section-underline"></div>
+        <div class="footer-section-pages">
+          <!-- page links go here -->
+           <a href="home.html">Home</a>
+           <a href="index.html">Trainer</a>
+           <a href="help.html">Help</a>
+           <a href="support.html">Support</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-section-title">Contact</div>
+        <div class="footer-section-underline"></div>
+        <div class="footer-section-pages">
+          <div class="footer-section-contact-tab"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg><div>Mail</div></div>
+          <div class="footer-section-contact-tab"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg><div>Feedback</div></div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-description">Created by Jason Shnaper @ Piedmont Hills Science Olympiad</div>
+  </footer>
+
+
+  <div id="app"></div>
+  <script src="js\frontend\frontend.js"></script>
+  <script type="module" src="./dist/bundle.js"></script>
+</body>
+</html>

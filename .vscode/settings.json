@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    "legacy": true,
+    "package-lock.json": true,
+    "package.json": true,
+    ".next": true,
+  }
+}

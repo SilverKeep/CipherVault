@@ -1,0 +1,133 @@
+:root {
+    /*  #fafcfd */
+    --main-bg-color: #e4f2fa;
+    --primary-bg-color: #46a3d2;
+    --secondary-bg-color: #91cdeb;
+    --accent-color: #5dbbeb;
+    --text-color: #0b161b;
+    --body-bg-color: #edf5fa;
+    --highlight-bg-color: #f2f7fa;
+  
+    --heading-font-size: 2rem;  
+    --subheading-font-size: 1.5rem;
+    --paragraph-font-size: 1rem;
+  
+    --border-radius: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+main {
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    margin: 10px auto;
+    width: 75%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color);
+    transition: all 0.25s ease-in-out;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.25rem;
+    margin: auto;
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+}
+
+button:hover {
+    background-color: var(--secondary-bg-color);
+}
+
+#chloe {
+    background-image: url('https://assets.wfcdn.com/im/91945521/compr-r85/3776/37769957/Fabric+Bow.jpg');
+    background-size: 100% 100%;
+}
+
+#chloe-p {
+    background-color: white;
+    opacity: 0.75;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    margin-top: 40px;
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px 70px;
+    /* width: 100%; */
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-section-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer-section-underline {
+    width: 50px;
+    height: 4px;
+    /* margin-top: .25rem; */
+    margin-bottom: .5rem;
+    background-color: var(--accent-color);
+}
+
+.footer-section-pages {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.footer-group div div.footer-section-pages a {
+    display: block;
+    /* margin-bottom: 10px; */
+    text-decoration: none;
+    color: var(--paragraph-font-size);
+}
+
+.footer-description {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+
+.footer-section-contact-tab {
+    display: flex;
+    gap: 10px;
+}
+
+footer .footer-group div.footer-desctiption-section .footer-group-logo img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+.footer-desctiption-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.description {
+    max-width: 300px;
+    text-align: center;
+}

@@ -1,0 +1,214 @@
+#header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+    gap: 20px;
+}
+
+#header-content {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: max(20px, 2vw);
+}
+
+#header-image {
+    flex: 1;
+    text-align: right;
+}
+
+#header-image img {
+    max-width: 100%;
+    border-radius: 100%;
+    clip-path: circle();
+    border: 3px solid black;
+}
+
+.home-header-title {
+    font-size: max(30px, 5vw);
+    color: var(--primary-bg-color);
+    margin-bottom: 0.5rem;
+}
+
+.home-header-description {
+    font-size: max(15px, 1.3vw);
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+.section-container {
+    background-color: var(--main-bg-color);
+    /* border-radius: var(--border-radius); */
+    margin: 0 auto;
+    padding: 30px 0;
+    /* width: 90%; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); */
+}
+
+.section-title {
+    font-size: var(--heading-font-size);
+    color: var(--primary-bg-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+}
+
+.main-pitch-content {
+    color: var(--text-color);
+    font-size: var(--paragraph-font-size);
+    line-height: 1.5;
+    margin: 0;
+    width: 40%;
+    font-size: var(--paragraph-font-size);
+    border-radius: var(--border-radius);
+}
+
+#benefits-content-container {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    background-color: var(--body-bg-color);
+}
+
+#benefits-content-title {
+    margin-bottom: 1rem;
+}
+
+.benefits-view-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.benefits-view-block.card {
+    flex: 1 1 220px;
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    transition: box-shadow 0.3s ease;
+    min-width: 220px;
+}
+
+.benefits-view-block.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.benefits-view-content-title {
+    font-size: var(--subheading-font-size);
+    margin-bottom: 0.5rem;
+    color: var(--primary-bg-color);
+    text-align: center;
+}
+
+.benefits-view-content {
+    font-size: var(--paragraph-font-size);
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+.home-separator-top {
+    width: 100%;
+    height: 75px;
+    background-color: var(--main-bg-color);
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+    font-size: 0;
+    margin-top: 10vh;
+    box-shadow: 0 -10px 3px black;
+}
+
+.home-separator-bottom {
+    width: 100%;
+    height: 75px;
+    background-color: var(--main-bg-color);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+    font-size: 0;
+}
+
+#home-canvas {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* FAQ Section Styles */
+#faq-container {
+    width: 70%;
+    margin: 40px auto;
+    text-align: left;
+    background-color: var(--body-bg-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+  }
+  
+#faq-title {
+    /* margin-bottom: 1rem; */
+    text-align: center;
+}
+  
+.faq-item {
+    /* margin-bottom: 1rem; */
+    cursor: pointer;
+}
+  
+.faq-question {
+    font-size: var(--subheading-font-size);
+    color: var(--primary-bg-color);
+    border-bottom: 3px solid white;
+    padding: 20px;
+}
+  
+.faq-item:hover .faq-question {
+    background-color: var(--highlight-bg-color);
+}
+
+.faq-item.open .faq-question {
+    background-color: var(--highlight-bg-color);
+}
+  
+.faq-answer {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    /* display: none; */
+    padding: 0px 20px;
+    transition: max-height 0.2s ease-in-out;
+}
+  
+.faq-item.open .faq-answer {
+    max-height: 200px;
+}
+
+.faq-question:before {
+    content: "\002B";
+    font-size: 20px;
+    margin-right: 0.75rem;
+    display: inline-block;
+}
+
+.active:before {
+    content: "\2212";
+    transform: translateY(-1px);
+    font-weight: bold;
+}
+
+.faq-answer-text {
+    padding: 10px 0;
+    margin: 0;
+}

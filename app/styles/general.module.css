@@ -1,0 +1,147 @@
+.general-body {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.general-main {
+    border-radius: 4px;
+    border: 1px solid #c2d5df;
+    margin: 0 auto;
+    width: min(100%, 1120px);
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 12px 12px 0 rgba(70, 163, 210, 0.25), 0 18px 36px rgba(26, 55, 78, 0.12);
+    overflow: hidden;
+}
+
+.general-button {
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color);
+    color: #2d3748;
+    transition: all 0.25s ease-in-out;
+    border: 1px solid transparent;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.general-button:hover {
+    background-color: var(--secondary-bg-color);
+}
+
+.primary-button {
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color);
+    color: #2d3748;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.primary-button:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.secondary-button {
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background-color: white;
+    color: #2d3748;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid var(--accent-color);
+    font-size: 1rem;
+    padding: calc(1rem - 2px) calc(2rem - 2px);
+    font-weight: 600;
+}
+
+.secondary-button:hover {
+    background-color: var(--accent-color);
+}
+
+.chloe {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/025/029/830/non_2x/frog-icon-animal-icon-button-sign-symbol-logo-illustration-editable-stroke-flat-design-style-free-vector.jpg');
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.chloe-p {
+    background-color: white;
+    opacity: 0.75;
+}
+
+.general-footer {
+    background-color: var(--main-bg-color);
+    margin-top: 40px;
+}
+
+.general-footer-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px 70px;
+    /* width: 100%; */
+    justify-content: center;
+    padding: 20px;
+}
+
+.general-footer-section-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.general-footer-section-underline {
+    width: 50px;
+    height: 4px;
+    /* margin-top: .25rem; */
+    margin-bottom: .5rem;
+    background-color: var(--accent-color);
+}
+
+.general-footer-section-pages {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.general-footer-group div div.footer-section-pages a {
+    display: block;
+    /* margin-bottom: 10px; */
+    text-decoration: none;
+    color: var(--paragraph-font-size);
+}
+
+.general-footer-description {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+
+.general-footer-section-contact-tab {
+    display: flex;
+    gap: 10px;
+}
+
+.general-img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+.general-footer-description-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.general-description {
+    max-width: 300px;
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "codebusters",
+  "version": "1.0.0",
+  "description": "Site to prepare for codebusters",
+  "main": "index.html",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Jason",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.48.1",
+    "eslint-config-next": "^16.1.6",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

@@ -1,0 +1,11 @@
+1. decodeNihilist(encodeNihilist()) sometimes loses a letter
+2. When generating aristocrat/patristocrat, sometimes generation is stuck in an infinite loop [the last letter maps to itself]
+
+website todo:
+ - more ciphers
+ - footer
+ - html pages
+ - customize the cipher with an input
+ - enter to check
+ - put banner in pages
+ - logo
