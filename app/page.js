@@ -45,15 +45,15 @@ export default function Home() {
 
             {showSignupNotice && (
                 <p className={mainStyles['signup-notice']} role="status">
-                    Please confirm your email to activate your account
+                    Please confirm your email to activate your account (check spam)
                 </p>
             )}
             
             <section className={mainStyles['hero']}>
                 <div className={mainStyles['hero-copy']}>
-                    <p className={mainStyles['eyebrow']}>Cipher practice for Science Olympiad Codebusters</p>
-                    <h1>Practice ciphers. Build speed.</h1>
-                    <p className={mainStyles['hero-intro']}>Ciphervault gives cryptogram enthusiasts and sciolympians focused puzzles, useful solving tools, and clear stats so every practice session has a purpose.</p>
+                    <p className={mainStyles['eyebrow']}>Cipher practice for SciOly Codebusters</p>
+                    <h1>Practice ciphers and Build speed</h1>
+                    <p className={mainStyles['hero-intro']}>Ciphervault gives cryptogram enthusiasts and sciolympians puzzles, useful solving tools, and clear stats so every practice session has a purpose.</p>
                     <div className={mainStyles['hero-buttons']}>
                         <button className={genStyles['primary-button']} onClick={() => router.push('/practice')}>
                             Open practice
@@ -107,7 +107,7 @@ export default function Home() {
                     <div className={mainStyles['step-card']}>
                         <div className={mainStyles['step-number']}>1</div>
                         <h3>Pick a cipher</h3>
-                        <p>Choose the format you want to sharpen, both mono and poly alphabetic.</p>
+                        <p>Choose the format you want to sharpen, either mono or poly alphabetic.</p>
                     </div>
                     <div className={mainStyles['step-card']}>
                         <div className={mainStyles['step-number']}>2</div>
@@ -128,7 +128,7 @@ export default function Home() {
 
             <section className={mainStyles['cta-section']}>
                 <p className={mainStyles['eyebrow']}>Your next attempt is ready</p>
-                <h2>Make a good solve today.</h2>
+                <h2>Make a good solve.</h2>
                 <p>Open a practice set and see which cipher gives you the most trouble.</p>
                 <button className={genStyles['primary-button']} onClick={() => router.push('/practice')}>
                     Start practicing
@@ -137,7 +137,7 @@ export default function Home() {
 
             <footer className={mainStyles['site-footer']}>
                 <div className={mainStyles['footer-brand']}>
-                    <img src="/new-image.png" alt="" className={mainStyles['footer-mark']} />
+                    <img src="/new-image.png" alt="Ciphervault logo" className={mainStyles['footer-mark']} />
                     <div>
                         <strong>Ciphervault</strong>
                         <p>Focused cipher practice for Science Olympiad.</p>
@@ -151,6 +151,14 @@ export default function Home() {
                     <Link href="/privacy">Privacy</Link>
                 </div>
                 <p className={mainStyles['footer-meta']}>Built with care.</p>
+                <div className={mainStyles['footer-social']}>
+                    <a href="https://www.instagram.com/ciphervault_of_silverkeep/" target="_blank" rel="noreferrer">
+                        Instagram
+                    </a>
+                    <a href="https://github.com/SilverKeep/CipherVault" target="_blank" rel="noreferrer">
+                        GitHub
+                    </a>
+                </div>
             </footer>
         </div>
     );
